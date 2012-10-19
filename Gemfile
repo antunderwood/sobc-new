@@ -9,7 +9,7 @@ group :production do
   gem "thin"
 end
 
-group :developemt do
+group :development do
   gem 'sqlite3'
 end
 
