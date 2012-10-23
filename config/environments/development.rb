@@ -34,4 +34,5 @@ SobcNew::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.cms.attachments.s3_bucket = "sobc-new-cms-development"
 end

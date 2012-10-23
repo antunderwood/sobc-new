@@ -58,5 +58,7 @@ module SobcNew
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.cms.attachments.storage = :filesystem    # This gems sets this value to :s3 when required.
   end
 end

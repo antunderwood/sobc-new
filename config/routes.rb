@@ -1,4 +1,6 @@
 SobcNew::Application.routes.draw do
+  mount BcmsKcfinder::Engine => '/bcms_kcfinder'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

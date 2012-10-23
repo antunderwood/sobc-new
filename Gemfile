@@ -45,3 +45,5 @@ gem 'bootswatch-rails', :git => 'git://github.com/aunderwo/bootswatch-rails.git'
 # gem 'debugger'
 
 gem "browsercms", "3.5.4"
+gem "bcms_aws_s3"
+gem "bcms_kcfinder"
