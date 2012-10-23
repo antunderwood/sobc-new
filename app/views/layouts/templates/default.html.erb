@@ -10,13 +10,13 @@
     <%= javascript_include_tag params[:controller] %>
     
   </head>
-  <body style="margin: 0; padding: 0; text-align: center;">
+  <body>
     <%= cms_toolbar %>
     <div class="container-fluid">
     <div class="navbar">
       <div class="navbar-inner">
         <%= link_to "South Oxhey Baptist Church", home_path, :class => "brand" %>
-      	<%= render_menu %>
+      	<%= render_menu :from_top=>0, :depth=>2, :show_all_siblings=>true %>
   		</div>
     </div>
       <h1><%= page_title %></h1>

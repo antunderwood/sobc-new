@@ -27,7 +27,7 @@ end
 
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 2.1.0.1'
-gem 'bootswatch-rails'
+gem 'bootswatch-rails', :git => 'git://github.com/aunderwo/bootswatch-rails.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
