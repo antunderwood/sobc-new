@@ -5,13 +5,6 @@ GIT
     bcms_kcfinder (1.0.2)
       browsercms (~> 3.5.2)
 
-GIT
-  remote: git://github.com/aunderwo/bootswatch-rails.git
-  revision: 15cb02d2d5fe165d83257c8a678f59c27cb97d4c
-  specs:
-    bootswatch-rails (0.1.0)
-      railties (>= 3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -166,7 +159,6 @@ DEPENDENCIES
   bcms_aws_s3
   bcms_kcfinder!
   bootstrap-sass (~> 2.1.0.1)
-  bootswatch-rails!
   browsercms (= 3.5.4)
   coffee-rails (~> 3.2.1)
   jquery-rails
