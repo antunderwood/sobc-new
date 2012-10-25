@@ -15,4 +15,6 @@
 // Loads all Bootstrap javascripts
 //= require bootstrap
 //= require_tree .
-$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+$(document).ready(function() {
+  $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+});
