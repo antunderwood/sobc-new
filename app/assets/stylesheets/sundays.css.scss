@@ -1,0 +1,11 @@
+$navbarHeight:  60px;
+// Then bootstrap itself
+@import "bootstrap";
+
+@import "bootstrap_theme_sundays";
+
+@import "bootstrap-responsive";
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 10px; }
+

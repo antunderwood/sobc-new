@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width">
     <title><%= page_title %></title>
     <%= yield :html_head %>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <% if current_page.section.name == "My Site" %>
+      <%= stylesheet_link_tag  "application", :media => "all" %>
+    <% else %>
+      <%= stylesheet_link_tag current_page.section.name.downcase , :media => "all" %>
+    <% end %>
     <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag params[:controller] %>
     <%= javascript_include_tag params[:controller] %>
@@ -45,7 +49,7 @@
               </p>
             </div>
             <div class="span8">
-              <p>IMAGE HERE</p>
+              <h1>IMAGE HERE</h1>
             </div>
           </div>
         </div>
