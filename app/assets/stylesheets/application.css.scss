@@ -13,4 +13,38 @@ $navbarHeight:  60px;
 
 // Bootstrap body padding for fixed navbar
 body { padding-top: 10px; }
+.row-fluid{
+  margin-bottom: 15px;
+}
+.nav_grid_element{
+  height: 150px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.nav_grid_padded{
+  padding: 70px 20px 50px 20px;
+}
+.dark_blue{
+  background-color: #1a2e84;
+}
+.bright_yellow{
+  background-color: #feff55;
+}
+.light_blue{
+  background-color: #6fcaf9;
+}
+.orange{
+  background-color: #f94a39;
+}
+.dark_pink{
+  background-color: #c9588c;
+}
+
 
