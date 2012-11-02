@@ -1,0 +1,49 @@
+.navbar-inner {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #65c6f9;
+  background-image: -moz-linear-gradient(top, $navbarColourOverride, $navbarDarkColourOverride);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($navbarColourOverride), to($navbarDarkColourOverride));
+  background-image: -webkit-linear-gradient(top, $navbarColourOverride, $navbarDarkColourOverride);
+  background-image: -o-linear-gradient(top, $navbarColourOverride, $navbarDarkColourOverride);
+  background-image: linear-gradient(to bottom, $navbarColourOverride, $navbarDarkColourOverride);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6fcaf9', endColorstr='#ff57c1f8', GradientType=0);
+  border: 1px solid $navbarBorderColourOverride;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #ffffff;
+  text-shadow: 0 1px 0 $navbarColourOverride;
+}
+.navbar .divider-vertical {
+  height: 40px;
+  margin: 0 9px;
+  border-left: 1px solid $navbarDarkColourOverride;
+  border-right: 1px solid $navbarColourOverride;
+}
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 1px 0 $navbarColourOverride;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: $navbarDarkColourOverride;
+  color: #555555;
+}

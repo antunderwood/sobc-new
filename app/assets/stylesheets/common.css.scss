@@ -1,0 +1,43 @@
+// Bootstrap body padding for fixed navbar
+body { padding-top: 10px; }
+.row-fluid{
+  margin-bottom: 15px;
+}
+.nav_grid_element{
+  height: 150px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.nav_grid_element a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav_grid_element a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.nav_grid_padded{
+  padding: 70px 20px 50px 20px;
+}
+.sobc-green{
+  background-color: $sobc-green;
+}
+.sobc-yellow{
+  background-color: $sobc-orange;
+}
+.sobc-purple{
+  background-color: $sobc-purple;
+}
+.sobc-red{
+  background-color: $sobc-red;
+}
+.sobc-blue{
+  background-color: $sobc-blue;
+}

@@ -5,7 +5,14 @@ $sobc-purple: #6d4b92;
 $sobc-red: #b33b3b;
 $sobc-blue: #3d6ab1;
 
+
 @import "bootstrap";
 @import "bootstrap_theme";
 @import "bootstrap-responsive";
 @import "common";
+
+$navbarColourOverride: $sobc-green;
+$navbarDarkColourOverride: $sobc-green;
+$navbarBorderColourOverride: $sobc-green;
+@import "navbarStyles"
+

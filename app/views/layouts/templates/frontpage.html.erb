@@ -9,11 +9,12 @@
     <% if current_page.section.name == "My Site" %>
       <%= stylesheet_link_tag  "application", :media => "all" %>
     <% else %>
-      <%= stylesheet_link_tag current_page.section.name.downcase.gsub(/\W/,'') , :media => "all" %>
+     <%= stylesheet_link_tag current_page.section.name.downcase.gsub(/\W/,'') , :media => "all" %>
     <% end %>
     <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag params[:controller] %>
     <%= javascript_include_tag params[:controller] %>
+    
   </head>
   <body>
     <%= cms_toolbar %>
@@ -28,12 +29,61 @@
               <span class="icon-bar"></span>
             </a>
             <%= link_to "South Oxhey Baptist Church", "/", :class => "brand" %>
-            <div class="nav-collapse">
+        	  <div class="nav-collapse">
               <%= render_menu :from_top=>0, :depth=>2, :show_all_siblings=>true %>
+            </div>
+          </div>
+    		</div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12 hero-unit">
+          <div class="row">
+            <div class="span3">
+              <p>Love God</p>
+              <p>Love Each Other</p>
+              <p>Love Lost</p>
+              <p>
+                <a class="btn btn-primary btn-large">
+                  Learn more
+                </a>
+              </p>
+            </div>
+            <div class="span9">
+              <%= container :splash_image %><br>
+              <%= container :splash_info %>
             </div>
           </div>
         </div>
       </div>
+      <div class="row-fluid">
+        <div class="span3 nav_grid_element nav_grid_padded sobc-blue">
+          <%= link_to "Sundays", "/sundays" %>
+        </div>
+        <div class="span3 nav_grid_element">
+          <%= image_tag "image1.png" %>
+        </div>
+        <div class="span3 nav_grid_element nav_grid_padded sobc-green">
+           <%= link_to "What's On", "/whats-on" %>
+        </div>
+        <div class="span3 nav_grid_element">
+          <%= image_tag "image2.png", :class=> "nav_grid_image" %>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span3 nav_grid_element">
+          <%= image_tag "image1.png" %>
+        </div>
+        <div class="span3 nav_grid_element nav_grid_padded sobc-yellow">
+           <%= link_to "Vison and Values", "/vision-and-values" %>
+        </div>
+        <div class="span3 nav_grid_element">
+          <%= image_tag "image2.png" %>
+        </div>
+        <div class="span3 nav_grid_element nav_grid_padded sobc-red">
+           <%= link_to "About Us", "/about-us" %>
+        </div>
+      </div>
+
       <div class="row-fluid">
         <div class="span3 padded">
           <div class="well sidebar-nav">
