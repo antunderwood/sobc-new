@@ -1,15 +1,4 @@
-$navbarHeight:  60px;
-$sobc-green: #89b243;
-$sobc-orange: #f68430;
-$sobc-purple: #6d4b92;
-$sobc-red: #b33b3b;
-$sobc-blue: #3d6ab1;
-
-
-@import "bootstrap";
-@import "bootstrap_theme";
-@import "bootstrap-responsive";
-@import "common";
+@import "application";
 
 $navbarColourOverride: $sobc-red;
 $navbarDarkColourOverride: $sobc-red;
