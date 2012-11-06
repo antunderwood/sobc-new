@@ -12,8 +12,6 @@
      <%= stylesheet_link_tag current_page.section.name.downcase.gsub(/\W/,'') , :media => "all" %>
     <% end %>
     <%= javascript_include_tag "application" %>
-    <%= stylesheet_link_tag params[:controller] %>
-    <%= javascript_include_tag params[:controller] %>
     
   </head>
   <body>
@@ -88,6 +86,7 @@
         <div class="span3 padded">
           <div class="well sidebar-nav">
             <h1>Side</h1>
+            <a id="email_address">vasb@fbhgubkurloncgvfgpuhepu.bet.hx</a>
             <%= container :side %>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
