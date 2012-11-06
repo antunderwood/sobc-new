@@ -50,7 +50,7 @@
 
           <div id="map">
             <!-- map div starts here-->
-            <script src="http://maps.google.co.uk/maps?file=api&v=2&key=ABQIAAAAOXRDObQXKO6TqkaeH1QD_hSxASmYSXfKd_MzuqJoMusPKVzvPRSSpzzVYz3Ai8q1idvrzSiPfI4EqQ" type="text/javascript">
+            <script src="http://maps.google.co.uk/maps?file=api&v=2&key=AIzaSyDLjRJY3zCby9i78m1FODPBDHG3RCVadD8" type="text/javascript">
             </script>
             <script type="text/javascript">
             //<![CDATA[
@@ -79,8 +79,8 @@
 
 
               map.addOverlay(marker);
-              //marker.openInfoWindowHtml(start_html);
-              // marker.showMapBlowup(2);
+              marker.openInfoWindowHtml(start_html);
+              marker.showMapBlowup(2);
 
 
 
@@ -90,15 +90,17 @@
                 var marker = new GMarker(point,icon);
 
                 // The info window version with the "to here" form open
-                to_html = html + '<br>Directions: <br><b>To Church</b> from <b>Start Address</b> (enter below):<form action="http://maps.google.co.uk/maps" method="get" target="directions">' +
+                to_html = html + '<br>Directions: <br><b>To Church</b> from <b>Start Address</b> (enter below):<form action="https://maps.google.co.uk/maps" method="get" target="directions">' +
                 '<input type="text" SIZE=40 MAXLENGTH=40 name="saddr" id="saddr" value="" /><br>' +
                 '<INPUT value="Get Directions" TYPE="SUBMIT" onclick="revealDirections();">' +
+                '<input type="hidden"  name="output" value="embed"/>' +
                 '<input type="hidden"  id="daddr" name="daddr" value="' + name + '@51.628105,-0.399353"/>' + '<br> <a href="javascript:fromhere(marker)">From Church</a>';
                 //'<input type="hidden" name="daddr" value="51.628105,-0.399353(' + name + ")" + '"/>';
                 // The info window version with the "to here" form open
-                from_html = html + '<br>Directions: <br><b>From Church</b> to <b>End address</b> (enter below):<form action="http://maps.google.co.uk/maps" method="get" target="directions">' +
+                from_html = html + '<br>Directions: <br><b>From Church</b> to <b>End address</b> (enter below):<form action="https://maps.google.co.uk/maps" method="get" target="directions">' +
                 '<input type="text" SIZE=40 MAXLENGTH=40 name="daddr" id="daddr" value="" /><br>' +
                 '<INPUT value="Get Directions" TYPE="SUBMIT" onclick="revealDirections();">' +
+                '<input type="hidden"  name="output" value="embed"/>' +
                 '<input type="hidden" id="saddr" name="saddr" value="' + name + '@51.628105,-0.399353"/>'+ '<br><a href="javascript:tohere(marker)">To Church</a>';
                 //'<input type="hidden" name="saddr" value="51.628105,-0.399353(' + name + ")" + '"/>';
                 // The inactive version of the direction info

@@ -41,8 +41,12 @@ body { padding-top: 10px; }
 .sobc-blue{
   background-color: $sobc-blue;
 }
+// Map stuff
 #map{
   width: 840px;
   height: 410px;
   margin: 0px 10px 0px 10px;
+}
+img[src*="gstatic.com/"], img[src*="googleapis.com/"]  {
+    max-width: 99999px;
 }
