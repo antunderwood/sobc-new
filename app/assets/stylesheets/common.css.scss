@@ -41,6 +41,13 @@ body { padding-top: 10px; }
 .sobc-blue{
   background-color: $sobc-blue;
 }
+.sidebar-nav {
+  background-image: url(sobc_cross.jpg);
+  color: #000000;
+  background-repeat:no-repeat;
+  background-color: #ffffff;
+  border: 5px solid #182b7b;
+}
 // Map stuff
 #map{
   width: 99%;

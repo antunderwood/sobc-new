@@ -3,4 +3,7 @@
 $navbarColourOverride: $sobc-red;
 $navbarDarkColourOverride: $sobc-red;
 $navbarBorderColourOverride: $sobc-red;
+.sidebar-nav {
+	border: 5px solid $sobc-red;
+}
 @import "navbarStyles"
