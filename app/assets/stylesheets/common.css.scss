@@ -43,13 +43,25 @@ body { padding-top: 10px; }
 }
 .sidebar-nav {
   background-image: url(sobc_cross.jpg);
-  color: #000000;
   background-repeat:no-repeat;
   background-color: #ffffff;
+  color: #000000;
   border: 5px solid #182b7b;
 }
 .sidebar-nav.frontpage{
   height: 100%;
+}
+.banner{
+  background-color: #ffffff;
+  border: 5px solid #182b7b;
+  width: 99%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.logo{
+  background-image: url(sobc_cross.jpg);
+  background-repeat:no-repeat;
 }
 // Map stuff
 #map{
