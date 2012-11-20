@@ -26,5 +26,6 @@ $(document).ready(function() {
         return $(this).height();
     }).get());
     columns.height(maxHeight);
+    $('#calendar_iframe').height(maxHeight-60);
   }
 });

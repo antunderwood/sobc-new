@@ -52,13 +52,27 @@ body { padding-top: 10px; }
   height: 100%;
   background-image: none;
 }
-.banner{
+.splash{
   background-color: #ffffff;
   border: 5px solid #182b7b;
   width: 99%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.splash h1 {
+  color: #182b7b;
+}
+.splash_calendar {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.splash_calendar h3 {
+  color: #182b7b;
+}
+#calendar_iframe {
+  width: 100%;
+  height: 100%;
 }
 .logo{
   background-image: url(sobc_cross.jpg);
