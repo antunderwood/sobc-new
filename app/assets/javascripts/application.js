@@ -19,10 +19,12 @@ $(document).ready(function() {
   $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
   
   // set frontpage columns to equal height
-  columns = $('.frontpageTopColumn');
-  maxHeight = Math.max.apply(
-    Math, columns.map(function() {
-      return $(this).height();
-  }).get());
-  columns.height(maxHeight);
+  if ( $(window).width() > 767){
+    columns = $('.frontpageTopColumn');
+    maxHeight = Math.max.apply(
+      Math, columns.map(function() {
+        return $(this).height();
+    }).get());
+    columns.height(maxHeight);
+  }
 });
