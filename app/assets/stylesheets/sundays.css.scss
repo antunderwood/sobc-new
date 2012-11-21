@@ -6,5 +6,9 @@ $navbarBorderColourOverride: $sobc-blue;
 .sidebar-nav {
 	border: 5px solid $sobc-blue;
 }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+	background-color: $sobc-blue !important;
+	background-image: none !important;
+}
 @import "navbarStyles"
 

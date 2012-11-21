@@ -1,5 +1,21 @@
 // Bootstrap body padding for fixed navbar
 body { padding-top: 10px; }
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #bbbbbb !important;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #bbbbbb !important;
+  border-bottom-color: #bbbbbb !important;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background-color: #182b7b !important;
+  background-image: none !important;
+}
 .row-fluid{
   margin-bottom: 15px;
 }
@@ -22,6 +38,10 @@ body { padding-top: 10px; }
 .nav_grid_element a:hover {
   color: #aaaaaa;
   text-decoration: none;
+}
+.nav_grid_padded {
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 .sobc-green{
   background-color: $sobc-green;
@@ -60,8 +80,11 @@ body { padding-top: 10px; }
 .splash h1 {
   color: #182b7b;
 }
-.splash_calendar {
+.splash_calendar_container{
   padding-bottom: 20px;
+}
+.splash_calendar {
+  padding-right: 20px;
 }
 .splash_calendar h3 {
   color: #182b7b;
