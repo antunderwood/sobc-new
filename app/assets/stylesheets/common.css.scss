@@ -16,8 +16,10 @@ body { padding-top: 10px; }
   background-color: #182b7b !important;
   background-image: none !important;
 }
-.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-  color: #ffffff;
+@media (max-width: 979px){
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    color: #ffffff;
+  }
 }
 .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover {
   color: #bbbbbb;
