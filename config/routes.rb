@@ -1,6 +1,7 @@
 SobcNew::Application.routes.draw do
   mount BcmsKcfinder::Engine => '/bcms_kcfinder'
-
+  
+  match "/about/calendar" => redirect("/about-us/calendar")
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
