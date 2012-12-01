@@ -1,29 +1,5 @@
 // Bootstrap body padding for fixed navbar
 body { padding-top: 10px; }
-.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-  background-color: transparent;
-  color: #bbbbbb;
-  text-decoration: none;
-}
-.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #bbbbbb !important;
-}
-.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #bbbbbb !important;
-  border-bottom-color: #bbbbbb !important;
-}
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
-  background-color: #182b7b !important;
-  background-image: none !important;
-}
-@media (max-width: 979px){
-  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-    color: #ffffff;
-  }
-}
-.nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover {
-  color: #bbbbbb;
-}
 .row-fluid{
   margin-bottom: 15px;
 }

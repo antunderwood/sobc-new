@@ -1,12 +1,9 @@
 @import "variables";
 $navbarBackground: $sobc-orange;
 $navbarBackgroundHighlight: $sobc-orange;
+$dropdownLinkBackgroundHover: $sobc-orange;
 @import "application";
 
 .sidebar-nav {
 	border: 5px solid $sobc-orange;
-}
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
-	background-color: $sobc-orange !important;
-	background-image: none !important;
 }
