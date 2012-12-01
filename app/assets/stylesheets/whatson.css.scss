@@ -1,8 +1,8 @@
+@import "variables";
+$navbarBackground: $sobc-green;
+$navbarBackgroundHighlight: $sobc-green;
 @import "application";
 
-$navbarColourOverride: $sobc-green;
-$navbarDarkColourOverride: $sobc-green;
-$navbarBorderColourOverride: $sobc-green;
 .sidebar-nav {
 	border: 5px solid $sobc-green;
 }
@@ -10,5 +10,3 @@ $navbarBorderColourOverride: $sobc-green;
 	background-color: $sobc-green !important;
 	background-image: none !important;
 }
-@import "navbarStyles"
-

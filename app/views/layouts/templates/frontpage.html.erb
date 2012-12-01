@@ -8,7 +8,7 @@
     <title><%= page_title %></title>
     <%= yield :html_head %>
     <% if current_page.section.name == "My Site" %>
-      <%= stylesheet_link_tag  "application", :media => "all" %>
+      <%= stylesheet_link_tag  "frontpage", :media => "all" %>
     <% else %>
      <%= stylesheet_link_tag current_page.section.name.downcase.gsub(/\W/,'') , :media => "all" %>
     <% end %>
