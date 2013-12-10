@@ -13,7 +13,7 @@
     <% end %>
     <%= javascript_include_tag "application" %>
   </head>
-  <body onload="showMap(map);">
+  <body onload="showMap();">
     <%= cms_toolbar %>
     <div class="container-fluid">
       <div class="navbar">
@@ -53,14 +53,15 @@
             <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
             <script type="text/javascript">
             //<![CDATA[
-            var map;
-            var marker;
+            var churchMap;
             var to_html="";
             var from_html="";
-            function showMap(map){
+            var watford_centre = new google.maps.LatLng(51.638105, -0.399353)
+            var south_oxhey_centre = new google.maps.LatLng(51.628105, -0.399353)
+            function showMap(){
               var mapOptions = {
-                zoom: 14,
-                center: new google.maps.LatLng(51.64, -0.399353),
+                zoom: 13,
+                center: watford_centre,
                 mapTypeControl: true,
                 mapTypeControlOptions: {
                   style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -73,10 +74,33 @@
                 streetViewControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
               }
-              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-
+              churchMap = new google.maps.Map(document.getElementById("map"), mapOptions);
+              var image = '/assets/sobc_marker.gif';
+              var churchLatLng = new google.maps.LatLng(51.628105, -0.399353);
+              var churchMarker = new google.maps.Marker({
+                  position: churchLatLng,
+                  map: churchMap,
+                  icon: image
+              });
             }
+            function zoomIn(){
+              churchMap.setCenter(south_oxhey_centre);
+              churchMap.setZoom(17);
+              document.getElementById("zoom").value="Zoom back out";
+              document.getElementById("zoom").onclick= function(){
+                zoomOut();
+              };
+            }
+            function zoomOut(){
+              churchMap.setCenter(watford_centre);
+              churchMap.setZoom(13);
+              document.getElementById("zoom").value="Zoom in to view South Oxhey";
+              document.getElementById("zoom").onclick= function(){
+                zoomIn();
+              };
+            }
+
+
 
 
             //]]>
@@ -88,11 +112,11 @@
             <input type="button" id="zoom" value="Zoom in to view South Oxhey" onclick="zoomIn();">
             <p>
               <b>Instructions for using the map</b><br>
-              Click on the + and - symbols, or drag the slider to zoom in and out. Click and drag the map to move around. For directions to the church, close
+              Click on the + and - symbols, or drag the slider to zoom in and out. Click and drag the map to move around. <!-- For directions to the church, close
               the zoomed pop up view by clicking on the X in the top right corner (Alternatively you can click on the "Zoom in to view South Oxhey" button just below the map). Now click on "South Oxhey Baptist Church" in the white bubble and then on 
               the "To Church" or "From Church" links in the new pop up box. Enter a road name (e.g Prestwick Road South Oxhey) or a postcode (e.g WD19 7BX) or even just a place (e.g St. Albans).
-              A new window will open showing you directions to or from that place.
-              <br>If the map is not working on your browser please click here for a static map.
+              A new window will open showing you directions to or from that place. -->
+              <br>If the map is not working on your browser please <a href="/assets/static_map.gif" target="_blank">click here</a> for a static map.
             </p>
             <!-- map instructions div end here-->
           </div>
